@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     res.send("===Selamat datang di Fictioner's Restaurant===");
 });
 
-app.get('/users', async (req, res) => {
+app.get('/menu', async (req, res) => {
     try {
         const [results] = await connection.query('SELECT * FROM Menu');
         res.json(results);
@@ -29,7 +29,7 @@ app.get('/users', async (req, res) => {
     }
 });
 
-app.post('/create-users', async (req, res) => {
+app.post('/create-menu', async (req, res) => {
     const users = req.body;
     try {
         const promises = users.map(user => {
@@ -45,7 +45,7 @@ app.post('/create-users', async (req, res) => {
     }
 });
 
-app.put('/update-users', async (req, res) => {
+app.put('/update-menu', async (req, res) => {
     const users = req.body;
 
     try {
@@ -62,7 +62,7 @@ app.put('/update-users', async (req, res) => {
     }
 });
 
-app.delete('/delete-users', async (req, res) => {
+app.delete('/delete-menu', async (req, res) => {
     const users = req.body;
 
     try {
