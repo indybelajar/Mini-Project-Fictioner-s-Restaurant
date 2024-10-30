@@ -1,0 +1,21 @@
+{
+  "name": "indyagustin_2410512106",
+  "version": "1.0.0",
+  "main": "express.js",
+  "type": "module",
+  "scripts": {
+    "start-dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Indy Agustin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mysql2": "^3.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "description": "This is my mini project"
+}
